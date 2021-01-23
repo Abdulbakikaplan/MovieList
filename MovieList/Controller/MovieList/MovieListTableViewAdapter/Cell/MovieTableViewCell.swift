@@ -16,4 +16,9 @@ class MovieTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+
+    func setup(movie: Result) {
+        nameLabel.text = movie.name
+        ratingLabel.text = movie.voteAverage?.double
+    }
 }

@@ -21,6 +21,7 @@ class MovieListViewController: UIViewController, StoryboardLoadable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter?.getMovieList()
         prepareTableView()
     }
 
@@ -32,4 +33,7 @@ class MovieListViewController: UIViewController, StoryboardLoadable {
 }
 
 extension MovieListViewController: IMovieListView {
+    func reloadData() {
+        tableView.reloadData()
+    }
 }

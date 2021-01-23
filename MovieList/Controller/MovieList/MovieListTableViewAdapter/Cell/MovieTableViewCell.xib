@@ -20,18 +20,18 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdd-ui-65S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bea-Zz-A1S">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bea-Zz-A1S">
+                                <rect key="frame" x="10" y="0.0" width="310" height="108"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ich-px-ONg">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="49"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8g-BR-Ii8">
-                                        <rect key="frame" x="0.0" y="54" width="320" height="54"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="59" width="310" height="49"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -41,7 +41,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bea-Zz-A1S" firstAttribute="top" secondItem="fdd-ui-65S" secondAttribute="top" id="XMt-Mh-oT9"/>
-                            <constraint firstItem="bea-Zz-A1S" firstAttribute="leading" secondItem="fdd-ui-65S" secondAttribute="leading" id="arv-1Y-zcA"/>
+                            <constraint firstItem="bea-Zz-A1S" firstAttribute="leading" secondItem="fdd-ui-65S" secondAttribute="leading" constant="10" id="arv-1Y-zcA"/>
                             <constraint firstAttribute="trailing" secondItem="bea-Zz-A1S" secondAttribute="trailing" id="bSP-SW-Ehr"/>
                             <constraint firstAttribute="bottom" secondItem="bea-Zz-A1S" secondAttribute="bottom" id="oJ7-CD-yLL"/>
                         </constraints>
