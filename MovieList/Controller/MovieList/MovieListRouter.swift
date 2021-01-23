@@ -41,4 +41,7 @@ class MovieListRouter {
 }
 
 extension MovieListRouter: IMovieListRouter {
+    func navigateDetail(result: Result) {
+        view?.navigationController?.pushViewController(MovieDetailRouter.setupModule(result: result), animated: true)
+    }
 }

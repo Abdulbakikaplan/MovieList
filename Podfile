@@ -8,6 +8,6 @@ target 'MovieList' do
   # Pods for MovieList
   pod 'Alamofire'
   pod 'SwiftLint'
-
+  pod 'Kingfisher'
 
 end
