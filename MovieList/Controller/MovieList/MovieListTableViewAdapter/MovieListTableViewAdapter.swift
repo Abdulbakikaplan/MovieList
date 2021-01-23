@@ -38,6 +38,10 @@ extension MovieListTableViewAdapter: UITableViewDelegate, UITableViewDataSource 
         return UITableView.automaticDimension
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.navigateDetail(result: presenter.fetchMovie()[indexPath.row])
+    }
+
     private func setupMovieTableViewCell(tableView: UITableView, indexPath: Int) -> UITableViewCell {
         let identifier = MovieTableViewCell.nameOfClass
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier)

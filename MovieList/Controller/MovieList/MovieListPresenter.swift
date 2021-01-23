@@ -19,10 +19,14 @@ class MovieListPresenter {
 }
 
 extension MovieListPresenter: IMovieListPresenter {
+    func navigateDetail(result: Result) {
+        router?.navigateDetail(result: result)
+    }
+
     func fetchMovie() -> [Result] {
         return movieList ?? []
     }
-    
+
     func getMovieList() {
         interactor?.getMovieList()
     }

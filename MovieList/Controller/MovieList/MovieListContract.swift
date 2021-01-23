@@ -15,6 +15,7 @@ protocol IMovieListView: IBaseView {
 protocol IMovieListPresenter: class {
     func fetchMovie() -> [Result]
     func getMovieList()
+    func navigateDetail(result: Result)
 }
 
 protocol IMovieListInteractor: class {
@@ -26,4 +27,5 @@ protocol IMovieListInteractorToPresenter: class {
 }
 
 protocol IMovieListRouter: class {
+    func navigateDetail(result: Result)
 }
