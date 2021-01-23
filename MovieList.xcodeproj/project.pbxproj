@@ -23,6 +23,17 @@
 		F9E011E525BC42430019D555 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E011E425BC42430019D555 /* UIStoryboard+Ext.swift */; };
 		F9E011E925BC42E20019D555 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E011E825BC42E20019D555 /* AppRouter.swift */; };
 		F9E011EF25BC44010019D555 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E011EE25BC44010019D555 /* Constants.swift */; };
+		F9E011F925BC46060019D555 /* MovieListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E011F325BC46060019D555 /* MovieListContract.swift */; };
+		F9E011FA25BC46060019D555 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E011F425BC46060019D555 /* MovieListPresenter.swift */; };
+		F9E011FB25BC46060019D555 /* MovieListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E011F525BC46060019D555 /* MovieListRouter.swift */; };
+		F9E011FC25BC46060019D555 /* MovieList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E011F625BC46060019D555 /* MovieList.storyboard */; };
+		F9E011FD25BC46060019D555 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E011F725BC46060019D555 /* MovieListViewController.swift */; };
+		F9E011FE25BC46060019D555 /* MovieListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E011F825BC46060019D555 /* MovieListInteractor.swift */; };
+		F9E0120425BC466E0019D555 /* MovieListTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E0120325BC466E0019D555 /* MovieListTableViewAdapter.swift */; };
+		F9E0120925BC46FE0019D555 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E0120725BC46FE0019D555 /* MovieTableViewCell.swift */; };
+		F9E0120A25BC46FE0019D555 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E0120825BC46FE0019D555 /* MovieTableViewCell.xib */; };
+		F9E0120E25BC48D30019D555 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E0120D25BC48D30019D555 /* NSObject+Ext.swift */; };
+		F9E0121225BC4C210019D555 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E0121125BC4C210019D555 /* UITableView+Ext.swift */; };
 		FBC7FD584A881C9FB32A4B4A /* Pods_MovieList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610AAF554F5BD791BD7E3496 /* Pods_MovieList.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +59,17 @@
 		F9E011E425BC42430019D555 /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
 		F9E011E825BC42E20019D555 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		F9E011EE25BC44010019D555 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F9E011F325BC46060019D555 /* MovieListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListContract.swift; sourceTree = "<group>"; };
+		F9E011F425BC46060019D555 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
+		F9E011F525BC46060019D555 /* MovieListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRouter.swift; sourceTree = "<group>"; };
+		F9E011F625BC46060019D555 /* MovieList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieList.storyboard; sourceTree = "<group>"; };
+		F9E011F725BC46060019D555 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		F9E011F825BC46060019D555 /* MovieListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListInteractor.swift; sourceTree = "<group>"; };
+		F9E0120325BC466E0019D555 /* MovieListTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewAdapter.swift; sourceTree = "<group>"; };
+		F9E0120725BC46FE0019D555 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		F9E0120825BC46FE0019D555 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		F9E0120D25BC48D30019D555 /* NSObject+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ext.swift"; sourceTree = "<group>"; };
+		F9E0121125BC4C210019D555 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,12 +140,8 @@
 		F9E011C825BC40D90019D555 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F9E011CA25BC41150019D555 /* SplashContract.swift */,
-				F9E011CB25BC41150019D555 /* SplashPresenter.swift */,
-				F9E011CC25BC41150019D555 /* SplashRouter.swift */,
-				F9E011CD25BC41150019D555 /* Splash.storyboard */,
-				F9E011CE25BC41150019D555 /* SplashViewController.swift */,
-				F9E011CF25BC41150019D555 /* SplashInteractor.swift */,
+				F9E011F225BC45F50019D555 /* MovieList */,
+				F9E011F125BC45ED0019D555 /* Splash */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,6 +149,7 @@
 		F9E011D825BC41720019D555 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F9E0120C25BC48C50019D555 /* NSObject */,
 				F9E011E325BC422B0019D555 /* View */,
 				F9E011D925BC417C0019D555 /* ProtocolExtension */,
 			);
@@ -165,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				F9E011E425BC42430019D555 /* UIStoryboard+Ext.swift */,
+				F9E0121125BC4C210019D555 /* UITableView+Ext.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +211,59 @@
 				F9E011EE25BC44010019D555 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		F9E011F125BC45ED0019D555 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F9E011CA25BC41150019D555 /* SplashContract.swift */,
+				F9E011CB25BC41150019D555 /* SplashPresenter.swift */,
+				F9E011CC25BC41150019D555 /* SplashRouter.swift */,
+				F9E011CD25BC41150019D555 /* Splash.storyboard */,
+				F9E011CE25BC41150019D555 /* SplashViewController.swift */,
+				F9E011CF25BC41150019D555 /* SplashInteractor.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		F9E011F225BC45F50019D555 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				F9E0120225BC465D0019D555 /* MovieListTableViewAdapter */,
+				F9E011F325BC46060019D555 /* MovieListContract.swift */,
+				F9E011F425BC46060019D555 /* MovieListPresenter.swift */,
+				F9E011F525BC46060019D555 /* MovieListRouter.swift */,
+				F9E011F625BC46060019D555 /* MovieList.storyboard */,
+				F9E011F725BC46060019D555 /* MovieListViewController.swift */,
+				F9E011F825BC46060019D555 /* MovieListInteractor.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		F9E0120225BC465D0019D555 /* MovieListTableViewAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				F9E0120625BC46EF0019D555 /* Cell */,
+				F9E0120325BC466E0019D555 /* MovieListTableViewAdapter.swift */,
+			);
+			path = MovieListTableViewAdapter;
+			sourceTree = "<group>";
+		};
+		F9E0120625BC46EF0019D555 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F9E0120725BC46FE0019D555 /* MovieTableViewCell.swift */,
+				F9E0120825BC46FE0019D555 /* MovieTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F9E0120C25BC48C50019D555 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				F9E0120D25BC48D30019D555 /* NSObject+Ext.swift */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +326,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E011FC25BC46060019D555 /* MovieList.storyboard in Resources */,
 				F9E011D325BC41150019D555 /* Splash.storyboard in Resources */,
+				F9E0120A25BC46FE0019D555 /* MovieTableViewCell.xib in Resources */,
 				F9E011B425BC3BE40019D555 /* LaunchScreen.storyboard in Resources */,
 				F9E011B125BC3BE40019D555 /* Assets.xcassets in Resources */,
 				F9E011AF25BC3BE30019D555 /* Main.storyboard in Resources */,
@@ -327,16 +402,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9E011DB25BC418D0019D555 /* StoryboardLoadable.swift in Sources */,
+				F9E0120E25BC48D30019D555 /* NSObject+Ext.swift in Sources */,
+				F9E011FA25BC46060019D555 /* MovieListPresenter.swift in Sources */,
 				F9E011D225BC41150019D555 /* SplashRouter.swift in Sources */,
+				F9E011FE25BC46060019D555 /* MovieListInteractor.swift in Sources */,
+				F9E011FD25BC46060019D555 /* MovieListViewController.swift in Sources */,
+				F9E011F925BC46060019D555 /* MovieListContract.swift in Sources */,
 				F9E011D525BC41150019D555 /* SplashInteractor.swift in Sources */,
 				F9E011AC25BC3BE30019D555 /* ViewController.swift in Sources */,
 				F9E011E525BC42430019D555 /* UIStoryboard+Ext.swift in Sources */,
 				F9E011D025BC41150019D555 /* SplashContract.swift in Sources */,
+				F9E0120425BC466E0019D555 /* MovieListTableViewAdapter.swift in Sources */,
 				F9E011D425BC41150019D555 /* SplashViewController.swift in Sources */,
 				F9E011E925BC42E20019D555 /* AppRouter.swift in Sources */,
 				F9E011A825BC3BE30019D555 /* AppDelegate.swift in Sources */,
+				F9E0120925BC46FE0019D555 /* MovieTableViewCell.swift in Sources */,
 				F9E011D125BC41150019D555 /* SplashPresenter.swift in Sources */,
 				F9E011E125BC41D40019D555 /* BaseContract.swift in Sources */,
+				F9E0121225BC4C210019D555 /* UITableView+Ext.swift in Sources */,
+				F9E011FB25BC46060019D555 /* MovieListRouter.swift in Sources */,
 				F9E011EF25BC44010019D555 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

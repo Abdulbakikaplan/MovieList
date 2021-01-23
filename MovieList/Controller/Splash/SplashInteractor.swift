@@ -16,5 +16,4 @@ class SplashInteractor {
 }
 
 extension SplashInteractor: ISplashInteractor {
-    // TODO: Implement use case methods
 }

@@ -1,5 +1,5 @@
 //
-//  SplashRouter.swift
+//  MovieListRouter.swift
 //  MovieList
 //
 //  Created by Abdülbaki Kaplan on 23.01.2021.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SplashRouter {
+class MovieListRouter {
 
     // MARK: Properties
 
@@ -17,13 +17,15 @@ class SplashRouter {
 
     // MARK: Static methods
 
-    static func setupModule() -> SplashViewController {
-        let viewController = UIStoryboard.loadViewController() as SplashViewController
-        let presenter = SplashPresenter()
-        let router = SplashRouter()
-        let interactor = SplashInteractor()
+    static func setupModule() -> MovieListViewController {
+        let viewController = UIStoryboard.loadViewController() as MovieListViewController
+        let presenter = MovieListPresenter()
+        let router = MovieListRouter()
+        let interactor = MovieListInteractor()
+        let adapter = MovieListTableViewAdapter(presenter: presenter, view: viewController)
 
         viewController.presenter =  presenter
+        viewController.adapter = adapter
         viewController.modalPresentationStyle = .fullScreen
 
         presenter.view = viewController
@@ -38,6 +40,5 @@ class SplashRouter {
     }
 }
 
-extension SplashRouter: ISplashRouter {
-    // TODO: Implement wireframe methods
+extension MovieListRouter: IMovieListRouter {
 }
