@@ -19,9 +19,19 @@ class SplashViewController: UIViewController, StoryboardLoadable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter?.navigateMovieList()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 }
 
 extension SplashViewController: ISplashView {
-    // TODO: implement view output methods
 }

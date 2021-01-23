@@ -18,9 +18,10 @@ class SplashPresenter {
 }
 
 extension SplashPresenter: ISplashPresenter {
-    // TODO: implement presentation methods
+    func navigateMovieList() {
+        router?.navigateMovieList()
+    }
 }
 
 extension SplashPresenter: ISplashInteractorToPresenter {
-    // TODO: implement interactor output methods
 }
