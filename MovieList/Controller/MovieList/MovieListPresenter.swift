@@ -15,10 +15,22 @@ class MovieListPresenter {
     weak var view: IMovieListView?
     var router: IMovieListRouter?
     var interactor: IMovieListInteractor?
+    var movieList: [Result]?
 }
 
 extension MovieListPresenter: IMovieListPresenter {
+    func fetchMovie() -> [Result] {
+        return movieList ?? []
+    }
+    
+    func getMovieList() {
+        interactor?.getMovieList()
+    }
 }
 
 extension MovieListPresenter: IMovieListInteractorToPresenter {
+    func getMovieList(movieList: [Result]) {
+        self.movieList = movieList
+        view?.reloadData()
+    }
 }

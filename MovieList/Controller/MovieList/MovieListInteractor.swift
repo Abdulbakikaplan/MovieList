@@ -16,4 +16,13 @@ class MovieListInteractor {
 }
 
 extension MovieListInteractor: IMovieListInteractor {
+    func getMovieList() {
+        API.shared.getMovie { (response, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            self.output?.getMovieList(movieList: response?.results ?? [])
+        }
+    }
 }

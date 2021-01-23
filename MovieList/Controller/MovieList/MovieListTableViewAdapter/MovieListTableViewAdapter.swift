@@ -21,7 +21,7 @@ class MovieListTableViewAdapter: NSObject {
 
 extension MovieListTableViewAdapter: IBaseAdapter {
     func itemCount() -> Int {
-        return 5
+        return presenter.fetchMovie().count
     }
 }
 
@@ -31,17 +31,18 @@ extension MovieListTableViewAdapter: UITableViewDelegate, UITableViewDataSource 
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return setupMovieTableViewCell(tableView: tableView)
+        return setupMovieTableViewCell(tableView: tableView, indexPath: indexPath.row)
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
 
-    private func setupMovieTableViewCell(tableView: UITableView) -> UITableViewCell {
+    private func setupMovieTableViewCell(tableView: UITableView, indexPath: Int) -> UITableViewCell {
         let identifier = MovieTableViewCell.nameOfClass
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier)
         if let cell = cell as? MovieTableViewCell {
+            cell.setup(movie: presenter.fetchMovie()[indexPath])
             return cell
         }
         return UITableViewCell()
