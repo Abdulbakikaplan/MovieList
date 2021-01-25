@@ -16,5 +16,4 @@ class MovieDetailInteractor {
 }
 
 extension MovieDetailInteractor: IMovieDetailInteractor {
-    // TODO: Implement use case methods
 }

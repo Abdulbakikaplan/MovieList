@@ -40,5 +40,4 @@ class MovieDetailRouter {
 }
 
 extension MovieDetailRouter: IMovieDetailRouter {
-    // TODO: Implement wireframe methods
 }

@@ -18,9 +18,7 @@ class MovieDetailPresenter {
 }
 
 extension MovieDetailPresenter: IMovieDetailPresenter {
-    // TODO: implement presentation methods
 }
 
 extension MovieDetailPresenter: IMovieDetailInteractorToPresenter {
-    // TODO: implement interactor output methods
 }
